@@ -133,7 +133,7 @@ button:hover{
 
 .back-to-top {
 	position: fixed;
-	bottom: 2rem;
+	bottom: 3.3rem;
 	right: 2rem;
 	display: inline-flex;
 	align-items: center;
