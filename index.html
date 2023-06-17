@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Santiago Cardoso - Portfolio</title>
 </head>
 
 <body>
     <div class="background">
+        <a id="home"></a>
         <header>
             <div class="header-link">
                 <li>
-                    <a href="#">home</a>
+                    <a href="#background">home</a>
                 </li>
                 <li>
-                    <a href="#">about</a>
+                    <a href="#about">about</a>
                 </li>
                 <li>
-                    <a href="#">projects</a>
+                    <a href="#projects">projects</a>
                 </li>
                 <li>
-                    <a href="#">skills</a>
+                    <a href="#skills">skills</a>
                 </li>
-                <button>contact me</button>
+                <form method="get" action="#contact">
+                    <button>contact me</button>
+                </form>
             </div>
         </header>
         <div class="container-text">
@@ -44,18 +49,28 @@
                     </div>
             </div>
         </div>
+        <a id="about"></a>
         <div class="slides about">
             <h1>About <span>section</span></h1>
         </div>
+        <a id="projects"></a>
         <div class="slides projects">
             <h1>Projects <span>section</span></h1>
         </div>
+        <a id="skills"></a>
         <div class="slides skills">
             <h1>Skills <span>section</span></h1>
         </div>
+        <a id="contact"></a>
         <div class="slides contact">
             <h1>Contact <span>section</span></h1>
         </div>
     </div>
+
+    <a href="#home" class="back-to-top">
+		<span class="material-icons">arrow_upward</span>
+	</a>
+    
 </body>
+
 </html>
