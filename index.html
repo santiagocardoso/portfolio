@@ -11,61 +11,434 @@
 </head>
 
 <body>
-    <div class="background">
-        <a id="home"></a>
+
+    <section id="home" class="hero-section">
         <header>
             <div class="header-link">
-                <li>
-                    <a href="#about">about</a>
-                </li>
-                <li>
-                    <a href="#projects">projects</a>
-                </li>
-                <li>
-                    <a href="#skills">skills</a>
-                </li>
-                <form method="get" action="#contact">
-                    <button>contact me</button>
-                </form>
+                <li><a href="#about">about</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#publications">publications</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#contact" class="btn-contact">contact me</a></li>
             </div>
         </header>
+
         <div class="container-text">
             <div class="text">
                 <h3>Hello, everyone</h3>
                 <h1>I'm <span>Santiago Cardoso</span></h1>
-                <h3>Backend | C/C++ | Java | Python</h3>
-                <p>I'm in my second year of studies towards
-                    <br>a bachelor's degree in Computer Science
-                    <br>at UDESC. I'm interested in Cybersecurity,
-                    <br>Backend, Shell, AI and Linux.<br>⠀</p>
-                    <div class="socials">
-                        <a href="https://github.com/santiagocardoso" target="_blank"><i class="fa fa-github" style="font-size:30px"></i></i></a>
-                        <a href="https://www.linkedin.com/in/santiagocardoso/" target="_blank"><i class="fa fa-linkedin-square" style="font-size:30px"></i></a>
-                    </div>
+                <h3>CS Master’s Student | C/C++ | Python</h3>
+                <p>
+                    Bachelor's (2026) in CS from UDESC. Currently<br>
+                    pursuing a Master's degree in CS (PPGCC) at UFSC.<br>
+                    I'm interested in Cybersecurity, Distributed Systems,<br>
+                    Computer Networks, and Cloud.
+                </p>
+                <div class="socials">
+                    <a href="https://github.com/santiagocardoso" target="_blank"><i class="fa fa-github" style="font-size:30px"></i></a>
+                    <a href="https://www.linkedin.com/in/santiagocardoso/" target="_blank"><i class="fa fa-linkedin-square" style="font-size:30px"></i></a>
+                </div>
             </div>
         </div>
-        <a id="about"></a>
-        <div class="slides about">
-            <h1>About <span>section</span>, in progress</h1>
-        </div>
-        <a id="projects"></a>
-        <div class="slides projects">
-            <h1>Projects <span>section</span>, in progress</h1>
-        </div>
-        <a id="skills"></a>
-        <div class="slides skills">
-            <h1>Skills <span>section</span>, in progress</h1>
-        </div>
-        <a id="contact"></a>
-        <div class="slides contact">
-            <h1>Contact <span>section</span>, in progress</h1>
-        </div>
-    </div>
+    </section>
 
-    <a href="#home" class="back-to-top">
-		<span class="material-icons">arrow_upward</span>
-	</a>
+    <section id="about" class="slides about">
+        <div class="section-content">
+            <h2 class="section-title">About <span>Me</span></h2>
+            
+            <div class="about-grid">
+                <div class="card terminal-card">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="terminal-title">bio.sh</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span>></span> Bachelor's (2026) in Computer Science from UDESC. Currently pursuing a Master's degree in Computer Science (PPGCC) at UFSC.</p>
+                        <p><span>></span> Research focused on Distributed Systems, Computer Networks, Intelligent Monitoring Systems, and Cybersecurity.</p>
+                        <p><span>></span> Passionate about low-level programming (C/C++), exploring network internals, and building resilient infrastructure.</p>
+                    </div>
+                </div>
+
+                <div class="about-highlights">
+                    <div class="stat-box">
+                        <h3>UDESC</h3>
+                        <p>B.S. Computer Science</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>UFSC</h3>
+                        <p>M.S. Computer Science (PPGCC)</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Interests</h3>
+                        <p>Distributed Systems, Computer Networks, Cybersecurity, and Cloud</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="slides projects">
+        <div class="section-content">
+            <h2 class="section-title">Latest <span>Projects</span></h2>
+            
+            <div class="projects-scroll-wrapper">
+                <div class="cards-grid">
+                    <div class="card project-card">
+                        <div class="project-header">
+                            <i class="fa fa-gamepad folder-icon"></i>
+                            <div class="project-links">
+                                <button type="button" class="btn-gallery" onclick="document.getElementById('guitar-modal').showModal()" title="View Photos">
+                                    <i class="fa fa-camera"></i> Photos
+                                </button>
+                            </div>
+                        </div>
+                        <h3>Polybar Mini Handwired Guitar</h3>
+                        <p class="project-desc">Compact handwired guitar controllers designed for rhythm games (Clone Hero, Guitar Hero, and Rock Band). Built with a 3D-printed enclosure, mechanical keyboard switches, and powered by a Raspberry Pi Pico (RP2040). Built two units, including a white custom build with glow-in-the-dark buttons.</p>
+                        <ul class="tags">
+                            <li>RP2040</li>
+                            <li>Hardware</li>
+                            <li>3D Printing</li>
+                            <li>Electronics</li>
+                        </ul>
+                    </div>
+
+                    <div class="card project-card">
+                        <div class="project-header">
+                            <i class="fa fa-car folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/santiagocardoso/tcc" target="_blank"><i class="fa fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Multicriteria Selection of Relay Vehicles in VANETs for Critical Transit Event Alert Message Transmission (B.S. Thesis)</h3>
+                        <p class="project-desc">Source code, simulation models, and experiments from my Bachelor's thesis focusing on stable, low-latency vehicular selection using multicriteria decision-making methods.</p>
+                        <ul class="tags">
+                            <li>VANETs</li>
+                            <li>Retransmitter</li>
+                            <li>Multi-Criteria</li>
+                            <li>Multi-Level</li>
+                            <li>QoS</li>
+                        </ul>
+                    </div>
+
+                    <div class="card project-card">
+                        <div class="project-header">
+                            <i class="fa fa-cogs folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/santiagocardoso/simulador_automatos_com_pilha" target="_blank"><i class="fa fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Pushdown Automata Simulator</h3>
+                        <p class="project-desc">Pushdown automata simulator implemented in Python for validating, recognizing, and parsing context-free languages and string transitions.</p>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>Automata</li>
+                            <li>Theory of Computation</li>
+                        </ul>
+                    </div>
+
+                    <div class="card project-card">
+                        <div class="project-header">
+                            <i class="fa fa-industry folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/santiagocardoso/simulador_de_fabrica_de_veiculos_com_automatos" target="_blank"><i class="fa fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Automata-Based Factory Simulator</h3>
+                        <p class="project-desc">Modeling and simulation of an automated vehicle production line using deterministic finite automata (DFA) to monitor assembly stages and discrete event transitions.</p>
+                        <ul class="tags">
+                            <li>C++</li>
+                            <li>FSM</li>
+                            <li>Simulation</li>
+                        </ul>
+                    </div>
+
+                    <div class="card project-card">
+                        <div class="project-header">
+                            <i class="fa fa-envelope-o folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/santiagocardoso/AplicacaoCorreioEletronico" target="_blank"><i class="fa fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Electronic Mail Client</h3>
+                        <p class="project-desc">Desktop email management and messaging client developed in Java, applying Object-Oriented Programming (OOP) concepts, network sockets, and communication protocols.</p>
+                        <ul class="tags">
+                            <li>Java</li>
+                            <li>OOP</li>
+                            <li>Networking</li>
+                        </ul>
+                    </div>
+
+                    <div class="card project-card">
+                        <div class="project-header">
+                            <img src="img/bouncy.gif" alt="Wafflinho" class="mascot-icon">
+                            <div class="project-links">
+                                <a href="https://github.com/santiagocardoso/discord_bot" target="_blank"><i class="fa fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Community Discord Bot</h3>
+                        <p class="project-desc">Interactive Discord bot developed in Python for server management, task automation, utility commands, and community engagement.</p>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>Discord API</li>
+                            <li>Automation</li>
+                        </ul>
+                    </div>
+
+                    <div class="card project-card">
+                        <div class="project-header">
+                            <i class="fa fa-file-code-o folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/santiagocardoso/funcao_gera_indice" target="_blank"><i class="fa fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Back-of-the-Book Index Generator</h3>
+                        <p class="project-desc">Functional implementation in Haskell designed for lexical analysis, text stream processing, and automated generation of remissive document indexes.</p>
+                        <ul class="tags">
+                            <li>Haskell</li>
+                            <li>Functional Programming</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="slides publications">
+        <div class="section-content">
+            <h2 class="section-title">Scientific <span>Publications</span></h2>
+            
+            <div class="publications-scroll-wrapper">
+                <div class="cards-grid">
+                    <div class="card project-card">
+                        <div class="project-header">
+                            <i class="fa fa-book folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://doi.org/10.20448/iras.v12i1.8702" target="_blank"><i class="fa fa-external-link"></i></a>
+                            </div>
+                        </div>
+                        <h3>A systematic literature review on m-learning supported by VANETs: Dissemination of educational content via RSUs and vehicular multi-hop in distance education environments</h3>
+                        <p class="project-desc">Santiago Cardoso, Adriano Fiorese, Avanilde Kemczinski. International Review of Applied Sciences (IRAS), 2026.</p>
+                        <ul class="tags">
+                            <li>Journal</li>
+                            <li>VANETs</li>
+                            <li>m-Learning</li>
+                        </ul>
+                    </div>
+
+                    <div class="card project-card">
+                        <div class="project-header">
+                            <i class="fa fa-file-text-o folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://doi.org/10.1007/978-3-032-23260-1_10" target="_blank"><i class="fa fa-external-link"></i></a>
+                            </div>
+                        </div>
+                        <h3>Stable and Low-Latency Cluster Formation Using RTT-Based Heuristics for V2V Communication in VANETs</h3>
+                        <p class="project-desc">Santiago Cardoso, Adriano Fiorese, Guilherme Piêgas Koslovski. 40th International Conference on Advanced Information Networking and Applications (AINA), Springer, 2026.</p>
+                        <ul class="tags">
+                            <li>Springer</li>
+                            <li>AINA 2026</li>
+                            <li>Clustering</li>
+                            <li>RTT</li>
+                        </ul>
+                    </div>
+
+                    <div class="card project-card">
+                        <div class="project-header">
+                            <i class="fa fa-file-text-o folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://sol.sbc.org.br/" target="_blank"><i class="fa fa-external-link"></i></a>
+                            </div>
+                        </div>
+                        <h3>Uma Abordagem Baseada em RTT para Agrupamento Estável e de Baixa Latência em VANETs</h3>
+                        <p class="project-desc">Santiago Cardoso, Adriano Fiorese, Guilherme Piêgas Koslovski. 53º Seminário Integrado de Software e Hardware (SEMISH / CSBC), SBC, 2026.</p>
+                        <ul class="tags">
+                            <li>CSBC 2026</li>
+                            <li>SEMISH</li>
+                            <li>SBC</li>
+                        </ul>
+                    </div>
+
+                    <div class="card project-card">
+                        <div class="project-header">
+                            <i class="fa fa-book folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://doi.org/10.1007/978-3-031-97119-8_13" target="_blank"><i class="fa fa-external-link"></i></a>
+                            </div>
+                        </div>
+                        <h3>VANET's Relay Vehicle Ranking for Critical Transit Events Message Transmission Using Analytical Hierarchy Process</h3>
+                        <p class="project-desc">Santiago Cardoso, Adriano Fiorese. Emerging Trends in Information Systems and Technologies, Springer Nature, 2025.</p>
+                        <ul class="tags">
+                            <li>Springer</li>
+                            <li>Book Chapter</li>
+                            <li>AHP</li>
+                            <li>VANETs</li>
+                        </ul>
+                    </div>
+
+                    <div class="card project-card">
+                        <div class="project-header">
+                            <i class="fa fa-file-text-o folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://doi.org/10.5220/0013292000003929" target="_blank"><i class="fa fa-external-link"></i></a>
+                            </div>
+                        </div>
+                        <h3>Selection of Retransmitter Nodes for Alert Message Transmission in VANETs Using a Multicriteria Decision-Making Approach Based on Vehicle Credibility</h3>
+                        <p class="project-desc">Santiago Cardoso, Adriano Fiorese. 27th International Conference on Enterprise Information Systems (ICEIS), INSTICC, 2025.</p>
+                        <ul class="tags">
+                            <li>ICEIS 2025</li>
+                            <li>INSTICC</li>
+                            <li>MCDM</li>
+                        </ul>
+                    </div>
+
+                    <div class="card project-card">
+                        <div class="project-header">
+                            <i class="fa fa-file-text-o folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://doi.org/10.5753/latinoware.2024.245756" target="_blank"><i class="fa fa-external-link"></i></a>
+                            </div>
+                        </div>
+                        <h3>Seleção de retransmissores de mensagens de alerta de eventos críticos em VANETs</h3>
+                        <p class="project-desc">Santiago Cardoso, Adriano Fiorese. XXI Congresso Latino-Americano de Software Livre e Tecnologias Abertas (Latinoware), SBC, 2024.</p>
+                        <ul class="tags">
+                            <li>Latinoware 2024</li>
+                            <li>SBC</li>
+                            <li>FCV</li>
+                        </ul>
+                    </div>
+
+                    <div class="card project-card">
+                        <div class="project-header">
+                            <i class="fa fa-graduation-cap folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://repositorio.udesc.br/handle/UDESC/28212" target="_blank"><i class="fa fa-external-link"></i></a>
+                            </div>
+                        </div>
+                        <h3>Seleção multicritério de veículos retransmissores em VANETs para transmissão de mensagens de alerta de evento crítico de trânsito</h3>
+                        <p class="project-desc">Santiago Cardoso, Adriano Fiorese. TCC, UDESC, 2026.</p>
+                        <ul class="tags">
+                            <li>UDESC</li>
+                            <li>TCC</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="slides skills">
+        <div class="section-content">
+            <h2 class="section-title">Technical <span>Skills</span></h2>
+            
+            <div class="skills-container">
+                <div class="card skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="badge-list">
+                        <span class="badge">C</span>
+                        <span class="badge">C++</span>
+                        <span class="badge">Java</span>
+                        <span class="badge">Python</span>
+                        <span class="badge">Shell Script</span>
+                    </div>
+                </div>
+
+                <div class="card skill-category">
+                    <h3>Areas of Expertise</h3>
+                    <div class="badge-list">
+                        <span class="badge">Computer Networks</span>
+                        <span class="badge">Cybersecurity</span>
+                        <span class="badge">Distributed Systems</span>
+                        <span class="badge">VANETs</span>
+                        <span class="badge">Cloud</span>
+                    </div>
+                </div>
+
+                <div class="card skill-category">
+                    <h3>Tools</h3>
+                    <div class="badge-list">
+                        <span class="badge">Git / GitHub</span>
+                        <span class="badge">Docker</span>
+                        <span class="badge">NS-3</span>
+                        <span class="badge">SUMO</span>
+                    </div>
+                </div>
+
+                <div class="card skill-category">
+                    <h3>Spoken Languages</h3>
+                    <div class="badge-list">
+                        <span class="badge">Portuguese (Native)</span>
+                        <span class="badge">English (Fluent)</span>
+                        <span class="badge">Japanese (Basic)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="slides contact">
+        <div class="section-content">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <p class="contact-subtitle">Open to research, job opportunities, and collaboration. Send a message!</p>
+
+            <div class="contact-box">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fa fa-envelope"></i>
+                        <p>santiago.cardoso@posgrad.ufsc.br</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa fa-map-marker"></i>
+                        <p>Florianópolis, SC - Brasil</p>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://github.com/santiagocardoso" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/santiagocardoso/" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <dialog id="guitar-modal" class="guitar-dialog" onclick="if (event.target === this) this.close()">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Polybar Mini Handwired Guitar</h3>
+                <button type="button" class="modal-close" onclick="document.getElementById('guitar-modal').close()">&times;</button>
+            </div>
+            <div class="modal-gallery">
+                <img src="img/guitar1.png" alt="Polybar Mini Blue Frame" onclick="openLightbox(this.src)">
+                <img src="img/guitar2.png" alt="Polybar Mini White Front" onclick="openLightbox(this.src)">
+                <img src="img/guitar3.png" alt="Polybar Mini White Back" onclick="openLightbox(this.src)">
+                <img src="img/guitar4.png" alt="Glow in the dark buttons" onclick="openLightbox(this.src)">
+                <img src="img/guitar5.jpeg" alt="Internal wiring and Pi Pico" onclick="openLightbox(this.src)">
+                <img src="img/guitar6.jpeg" alt="Workbench and soldering station" onclick="openLightbox(this.src)">
+                <img src="img/guitar7.jpeg" alt="Raspberry Pi Pico soldered pins" onclick="openLightbox(this.src)">
+                <img src="img/guitar8.jpeg" alt="Mechanical switches harness" onclick="openLightbox(this.src)">
+                <img src="img/guitar9.jpeg" alt="Keycaps and crimping tool" onclick="openLightbox(this.src)">
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="lightbox-dialog" class="lightbox-dialog" onclick="if (event.target === this) this.close()">
+        <div class="lightbox-content">
+            <button type="button" class="lightbox-close" onclick="document.getElementById('lightbox-dialog').close()">&times;</button>
+            <img id="lightbox-img" src="" alt="Expanded photo">
+        </div>
+    </dialog>
+
+    <a href="#home" class="back-to-top" aria-label="Voltar ao topo">
+        <span class="material-icons">arrow_upward</span>
+    </a>
+
+    <script>
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox-dialog');
+            document.getElementById('lightbox-img').src = src;
+            lightbox.showModal();
+        }
+    </script>
     
 </body>
-
 </html>
